@@ -1,0 +1,2 @@
+export const SET_PERSON_NAME = "SET_PERSON_NAME";
+export const SET_PERSON_AGE = "SET_PERSON_AGE";
