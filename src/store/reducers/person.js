@@ -3,6 +3,7 @@ import { SET_PERSON_NAME, SET_PERSON_AGE } from "../actionTypes";
 
 const initialState = {
   name: "",
+  age: "",
 };
 
 const personReducer = (state = initialState, action = {}) => {

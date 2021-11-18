@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { setPersonName, setPersonAge } from "../store/actions/person";
 
-function Form({ setPersonName }) {
+function Form({ setPersonName, setPersonAge }) {
   const navigate = useNavigate();
 
   return (
@@ -16,8 +16,9 @@ function Form({ setPersonName }) {
 
       <h3>Insert your age</h3>
       <input type="text" onChange={(e) => setPersonAge(e.target.value)} />
-
-      <button onClick={() => navigate("/result")}>Enviar</button>
+      <div>
+        <button onClick={() => navigate("/result")}>Enviar</button>
+      </div>
     </div>
   );
 }
