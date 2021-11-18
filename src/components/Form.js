@@ -10,14 +10,16 @@ function Form({ setPersonName, setPersonAge }) {
 
   return (
     <div className="form-input">
-      <h3>Insert your name</h3>
+      <h3 className="form-input-title">Insert your name</h3>
 
       <input type="text" onChange={(e) => setPersonName(e.target.value)} />
 
-      <h3>Insert your age</h3>
+      <h3 className="form-input-title">Insert your age </h3>
       <input type="text" onChange={(e) => setPersonAge(e.target.value)} />
       <div>
-        <button onClick={() => navigate("/result")}>Enviar</button>
+        <button className="button-11" onClick={() => navigate("/result")}>
+          Enviar
+        </button>
       </div>
     </div>
   );
